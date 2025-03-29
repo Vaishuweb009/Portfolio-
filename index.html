@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webpage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+  <header class="header">
+    <h1>My first webpage</h1>
+  </header>
+  <!-- Main Content Section -->
+  <main class="main-content">
+    <section class="intro">
+      <p>This is a simple WEBPAGE </p>
+         </section>
+    <button class="menu-button" 
+        onclick="toggleCurtain()">
+        &#9776; Menu
+    </button>
+
+    <div class="curtain-menu" id="curtainMenu">
+        
+        
+        <a href="index.html" onclick="toggleCurtain()">Home</a>
+        <a href="about.html" onclick="toggleCurtain()">About</a>
+        <a href="contact.html" onclick="toggleCurtain()">Contact</a>
+    </div>
+  </main>
+  <script>
+    function toggleCurtain() {
+        var curtainMenu = document.getElementById("curtainMenu");
+        curtainMenu.classList.toggle("menu-open");
+    }
+</script>
+</body>
+</html>
